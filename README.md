@@ -1,8 +1,8 @@
-# loser.gg
+# adrn.dev
 
 ---
 
-Source code for my personal website, [loser.gg](https://loser.gg).
+Source code for my personal website, [adrn.dev](https://adrn.dev).
 
 Built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [TypeScript](https://www.typescriptlang.org/) & [Million](https://www.million.dev).
 
