@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="adrn">
+<meta property="og:image" content="images/AO-logo-web.png">
+<meta property="og:description" content="👋 hey, this is adrn's website.">
+<meta property="og:site_name" content="adrn - homepage">
+<meta property="og:url" content="https://adrn.dev">
+    <script src="js/jq.js"></script>
+    <title>adrn - homepage</title>
+    <link rel="shortcut icon" href="raw">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTQHPNFY05"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MTQHPNFY05');
+</head>
+
+        </script>
+
+    <script>
+    const SITE_NAME = document.title;
+    const TIME = 0.3 * 1000;
+
+    const yield = seconds => new Promise(_ => setTimeout(_, seconds));
+    async function init() {
+        await yield(TIME * 4);
+        for (let s = SITE_NAME.length; s >= 0; s--) {
+            let newTitle = SITE_NAME.substr(0, s);
+            if (s === 0) newTitle = "_";
+                
+            document.title = newTitle;
+            await yield(TIME);
+        }
+        
+        await yield(TIME);
+        for (let s = 0; s <= SITE_NAME.length; s++) {
+            let newTitle = SITE_NAME.substr(0, s);
+            if (s === 0) newTitle = "_";
+                
+            document.title = newTitle;
+            await yield(TIME);
+        }
+
+        init();
+    }
+
+        init();
+    </script>
+
+<body>
+    <div class="overlay">
+        <div class="floating-card light info">
+            <h1>adrn - freelance dev</h1>
+        <span id="spotify">
+
+        </span>
+            <script src="js/worker.js"></script>
+            <p></p>
+            <div class="links">
+                <div class="social-icons">
+                    <a style="color:#7289DA" href="https://discords.com/bio/p/1171261965767807028">
+                        <i class="fab fa-discord"></i>
+                        <span class="tooltip">Discord Account</span>
+                    </a>
+                    <a style="color:#ffffff" href="https://steamcommunity.com/id/curednl">
+                        <i class="fab fa-steam"></i>
+                        <span class="tooltip">Steam</span>
+                    </a>
+                    <a style="color:#b90000" href="https://www.last.fm/user/okigo">
+                        <i class="fab fa-lastfm-square"></i>
+                        <span class="tooltip">Last.fm</span>
+                    </a>
+                        <a style="color:#ffffff" href="https://adrn.dev/directory">
+                            <i class="fas fa-cloud"></i>
+                            <span class="tooltip">Directory</span>
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
