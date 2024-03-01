@@ -1,1 +1,0 @@
-var audio=document.getElementById("audio");document.getElementById("enter").addEventListener("click",(function(){const e=document.getElementById("enter");e.style.opacity="0",e.addEventListener("transitionend",(()=>e.remove())),void 0===window.orientation&&(audio.volume=.2,audio.play())}));
