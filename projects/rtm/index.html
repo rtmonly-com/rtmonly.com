@@ -18,7 +18,12 @@
         <script src="js/256-fdb78f8e99515b5f.js" async=""></script>
         <script src="js/layout-02abee9cfb3807ae.js" async=""></script>
         <script src="js/not-found-d1846033d9faefea.js" async=""></script>
-        <title>home • rtm</title>
+
+	<link href="css/style.css" rel="stylesheet">
+	<script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+	<script defer="defer" src="magicmouse-2.0.0.cdn.min.js"></script>
+
+        <title>• rtm</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
         <meta name="next-size-adjust">
         <script src="js/polyfills-78c92fac7aa8fdd8.js" crossorigin="" nomodule=""></script>
@@ -70,6 +75,7 @@
                 <section class="flex flex-col space-y-6">
                     <!--$-->
                     <!--/$-->
+		<div class="draggable">
                     <div class="">
                         <div class="flex flex-row space-x-2 items-center"><div class="relative mr-2"><slot><img alt="discord avatar" loading="lazy" width="64" height="64" decoding="async" data-nimg="1" class="rounded-lg" srcset="https://media.discordapp.net/attachments/1199324365809004626/1212501310750859334/ea11232358408f58edd537c13225cf5c.png?ex=65f210d7&is=65df9bd7&hm=3754a425a018f98a2a2f2f64494af8563b3dfb40a374060a971c801b0b112316&=&format=webp&quality=lossless&width=563&height=563" style=""></slot><div class="absolute bottom-0 right-0 transform translate-x-1 translate-y-1"><span class="relative flex h-4 w-4"><span class="animate-ping transition-all absolute inline-flex h-full w-full rounded-full bg-green-500"></span><span class="relative inline-flex rounded-full h-4 w-4 bg-green-500"></span></span></div></div><div class="flex flex-col space-y-1"><p class="text-foreground"><slot>RTM</slot></p><div class="flex flex-row space-x-1 items-center"><slot><p class="text-muted-foreground text-sm">Network, Community, Projects</p></slot></div></div></div>
                         <br/>
@@ -164,6 +170,7 @@
                         </ul>
                     </div>
                 </section>
+                            </div>
             </div>
         </div>
         <script data-cfasync="false" src="js/email-decode.min.js"></script>
@@ -249,5 +256,21 @@
             }
             // ]]>
         </script>
+
+    <script src="js/cursor.js"></script>
+		<script type="text/javascript" src="js/magicmouse-2.0.0.cdn.min.js"></script>
+
+		<script type="text/javascript">
+			options = {
+			"cursorOuter": "circle-basic",
+			"hoverEffect": "circle-move",
+			"hoverItemMove": false,
+			"defaultCursor": false,
+			"outerWidth": 30,
+			"outerHeight": 30
+			  };
+			magicMouse(options);
+		</script>
+
     </body>
 </html>
