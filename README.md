@@ -22,6 +22,6 @@ pnpm i && pnpm build
 
 ## Deploy
 
-Deployment is done via [Cloudflare Pages](https://pages.cloudflare.com/), using [next-on-pages](https://github.com/cloudflare/next-on-pages).
+Deployment is done via [Github Pages](https://pages.github.com/).
 
 Cache is cleared via a [Workflow](.github/workflows/cf-pages-await.yml) that runs on every push.
