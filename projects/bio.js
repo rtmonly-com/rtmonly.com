@@ -14,9 +14,9 @@ window.addEventListener('load', () => {
           clearInterval(intervalId);
           setTimeout(() => {
             deleteBio(bio);
-          }, 500);
+          }, 750);
         }
-      }, 50);
+      }, 75);
     }
   
     function deleteBio(bio) {
@@ -32,9 +32,9 @@ window.addEventListener('load', () => {
           }
           setTimeout(() => {
             typeBio(bios[currentBioIndex]);
-          }, 500);
+          }, 750);
         }
-      }, 50);
+      }, 75);
     }
   
     typeBio(bios[currentBioIndex]);
