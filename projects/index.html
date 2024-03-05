@@ -13,7 +13,7 @@
     <link rel="icon" type="image/x-icon" href="favi.png">
 	<link rel="stylesheet" href="https://kit.fontawesome.com/8d2a52b7b7.js" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="projects/css/style.css" rel="stylesheet">
 	<script defer="defer" src="magicmouse-2.0.0.cdn.min.js"></script>
 	<script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
 	
@@ -1048,6 +1048,22 @@ input:focus {
 .shadow {
     box-shadow: 0 4px 8px 0 #5a5a5a14,0 6px 20px 0 #2f2f2f38
 }
+.draggable {
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+
+.draggable input {
+    -webkit-user-select: text;
+     -khtml-user-select: text;
+       -moz-user-select: text;
+         -o-user-select: text;
+            user-select: text;
+ }
 
 @keyframes load {
     0% {
