@@ -80,7 +80,7 @@
                         children: (0,
                         r.jsx)(N, {
                             text: "projects",
-                            icon: c.isG,
+                            icon: f.ZE5,
                             href: "https://adrn.dev/projects"
                         })
                     }), (0,
