@@ -60,17 +60,17 @@
                         className: "hidden gap-5 sm:flex",
                         children: [(0,
                         r.jsx)(a(), {
-                            href: "/#Main",
+                            href: "/rtm/#Main",
                             className: "link relative",
                             children: "Main"
                         }), (0,
                         r.jsx)(a(), {
-                            href: "/#about",
+                            href: "/rtm/#about",
                             className: "link relative",
                             children: "About"
                         }), (0,
                         r.jsx)(a(), {
-                            href: "/#founders",
+                            href: "/rtm/#founders",
                             className: "link relative",
                             children: "Founders"
                         })]
