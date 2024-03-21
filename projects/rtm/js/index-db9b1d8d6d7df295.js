@@ -60,19 +60,9 @@
                         className: "hidden gap-5 sm:flex",
                         children: [(0,
                         r.jsx)(a(), {
-                            href: "/projects/rtm/#main",
+                            href: "/projects/rtm/gallery",
                             className: "link relative",
-                            children: "Main"
-                        }), (0,
-                        r.jsx)(a(), {
-                            href: "/projects/rtm/#about",
-                            className: "link relative",
-                            children: "About"
-                        }), (0,
-                        r.jsx)(a(), {
-                            href: "/projects/rtm/#founders",
-                            className: "link relative",
-                            children: "Founders"
+                            children: "Gallery"
                         })]
                     }), (0,
                     r.jsx)("div", {
@@ -100,19 +90,9 @@
                                 className: "flex flex-col gap-1 w-full text-white",
                                 children: [(0,
                                 r.jsx)(a(), {
-                                    href: "/projects/rtm/#main",
+                                    href: "/projects/rtm/gallery",
                                     className: "w-full p-3 relative",
-                                    children: "Main"
-                                }), (0,
-                                r.jsx)(a(), {
-                                    href: "/projects/rtm/#about",
-                                    className: "w-full p-3 relative",
-                                    children: "About"
-                                }), (0,
-                                r.jsx)(a(), {
-                                    href: "/projects/rtm/#founders",
-                                    className: "w-full p-3 relative",
-                                    children: "Founders"
+                                    children: "Gallery"
                                 })]
                             }), (0,
                             r.jsx)(N, {
