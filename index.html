@@ -1,1133 +1,169 @@
-<!-- © 2023 H8.LOL | All rights reserved. -->
-
 <!DOCTYPE html>
-<html>
-<head>
-	<title>adrian</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="adrian">
-    <meta property="og:description" content="hi im adrian">
-    <meta property="og:image" content="https://media.discordapp.net/attachments/1173787520077660271/1214143667326165003/crown.png?ex=65f80a67&is=65e59567&hm=b4fc20faffdee8ba2fb75c3ceb24032cd36ef0f492ab0e7aeea081b37ae686d6&=&format=webp&quality=lossless&width=220&height=220">
-    <meta property="og:url" content="https://adrian">
-    <meta property="theme-color" content="#FFFFFF">
-    <link rel="icon" type="image/x-icon" href="favi.png">
-	<link rel="stylesheet" href="https://kit.fontawesome.com/8d2a52b7b7.js" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<script defer="defer" src="magicmouse-2.0.0.cdn.min.js"></script>
-	<script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
-	
-	<style>
-		body {
-			background-color: #000000;
-			color: #fff;
-			font-family: 'Roboto Mono', monospace;
-			margin: 0;
-			padding: 0;
-			background-image: url('topo.svg');
-			background-repeat: repeat;
-		}
-
-		.container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-		}
-
-		.profile-pic {
-			width: 150px;
-			height: 150px;
-			border-radius: 50%;
-			object-fit: cover;
-			margin-top: -75px;
-			border: 5px solid #FFFFFF;
-		}
-
-        h1 {
-        font-size: 4rem;
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-        background-image: url('line.svg');
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        background-size: 160% 10px;
-        padding-bottom: 10px;
-        color: #fff;
-        }
-
-		p {
-			font-size: 1.5rem;
-			margin-bottom: 2rem;
-            color: #cccccc;
-		}
-
-		.icons {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin-bottom: 2rem;
-		}
-
-		.icons i {
-			font-size: 2rem;
-			margin: 0 1rem;
-			transition: transform 0.3s ease-in-out;
-			color: #ffffff;
-		}
-
-		.icons i:hover {
-			transform: scale(1.2);
-		}
-        header {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			height: 80px;
-			padding: 0 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
-		}
-
-		.nav {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 1.3rem;
-			font-weight: bold;
-            margin: 0;
-            color: #cccccc;
-            flex-grow: 1;
-		}
-
-		.nav a {
-			color: #ccc;
-			text-decoration: none;
-			margin: 0 20px;
-			position: relative;
-		}
-
-		.nav a:hover {
-			color: #fff;
-		}
-
-		.nav a:hover::after {
-			content: "";
-			display: block;
-			background-image: url('line.svg');
-			background-repeat: no-repeat;
-			background-position: center bottom;
-			background-size: 600% 10px;
-			position: absolute;
-			bottom: -5px;
-			left: 0;
-			right: 0;
-			height: 10px;
-		}
-        ::selection {
-        background-color: rgba(255, 255, 255, 0.5);
-        color: #fff;
-        }
-        .button {
-        display: block;
-        margin-top: 1rem;
-        padding: 0.5rem 1rem;
-        background-color: rgba(255, 255, 255, 0.2);
-        color: #FFFFFF;
-        border: 5px dashed #FFFFFF;
-        border-radius: 50px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1rem;
-        opacity: 0.8;
-        transition: opacity 0.15s ease-in-out, background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-        border-width: 2px;
-        }
-
-        .button:hover {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 1);
-        color: black;
-        }
-        .overlay {
-        position: fixed;
-        background-image: url('topo.svg');
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #000;
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-		@media only screen and (max-width: 600px) {
-  		.profile-pic {
-    	margin-top: 60px;
-  		}
-  		h1 {
- 		margin-top: 0.5rem;
-  		}
-  		p {
-    	margin-bottom: 3rem;
-  		}
-  		.icons {
-    	margin-bottom: 3rem;
-  		}
-  		img[src*="discord.c99.nl/widget"] {
-    	margin-top: 3rem;
-		max-width: 100%;
-		height: auto;
-  		}
-  		.button {
-    	margin-top: 3rem;
-  		}
-		  .table {
-    display: grid;
-    gap: 45px;
-    padding-top: 25px;
-    grid-template-columns: repeat(25px,1fr)
-}
-}
-
-:after,:before {
-    --tw-content: ""
-}
-
-html {
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-feature-settings: normal;
-    font-variation-settings: normal
-}
-
-body {
-    margin: 0;
-    line-height: inherit
-}
-
-hr {
-    height: 0;
-    color: inherit;
-    border-top-width: 1px
-}
-
-abbr:where([title]) {
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit
-}
-
-b,strong {
-    font-weight: bolder
-}
-
-code,kbd,pre,samp {
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-    font-size: 1em
-}
-
-small {
-    font-size: 80%
-}
-
-sub,sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline
-}
-
-sub {
-    bottom: -.25em
-}
-
-sup {
-    top: -.5em
-}
-
-table {
-    text-indent: 0;
-    border-color: inherit;
-    border-collapse: collapse
-}
-
-button,input,optgroup,select,textarea {
-    font-family: inherit;
-    font-feature-settings: inherit;
-    font-variation-settings: inherit;
-    font-size: 100%;
-    font-weight: inherit;
-    line-height: inherit;
-    color: inherit;
-    margin: 0;
-    padding: 0
-}
-
-button,select {
-    text-transform: none
-}
-
-:-moz-focusring {
-    outline: auto
-}
-
-:-moz-ui-invalid {
-    box-shadow: none
-}
-
-progress {
-    vertical-align: baseline
-}
-
-::-webkit-inner-spin-button,::-webkit-outer-spin-button {
-    height: auto
-}
-
-::-webkit-search-decoration {
-    -webkit-appearance: none
-}
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit
-}
-
-summary {
-    display: list-item
-}
-
-blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre {
-    margin: 0
-}
-
-fieldset {
-    margin: 0
-}
-
-fieldset,legend {
-    padding: 0
-}
-
-menu,ol,ul {
-    list-style: none;
-    margin: 0;
-    padding: 0
-}
-
-dialog {
-    padding: 0
-}
-
-textarea {
-    resize: vertical
-}
-
-input::-moz-placeholder,textarea::-moz-placeholder {
-    opacity: 1;
-    color: #ffffff
-}
-
-input::placeholder,textarea::placeholder {
-    opacity: 1;
-    color: #ffffff
-}
-
-[role=button],button {
-    cursor: pointer
-}
-
-:disabled {
-    cursor: default
-}
-
-img,video {
-    max-width: 100%;
-    height: auto
-}
-
-[hidden] {
-    display: none
-}
-
-.left-0 {
-    left: 0
-}
-
-.left-\[50\%\] {
-    left: 50%
-}
-
-.right-0 {
-    right: 0
-}
-
-.right-5 {
-    right: 1.25rem
-}
-
-.top-1\/4 {
-    top: 25%
-}
-
-.top-20 {
-    top: 5rem
-}
-
-.z-\[1000\] {
-    z-index: 1000
-}
-
-.z-\[2\] {
-    z-index: 2
-}
-
-.-m-1 {
-    margin: -.25rem
-}
-
-.m-6 {
-    margin: 1.5rem
-}
-
-.-mt-4 {
-    margin-top: -1rem
-}
-
-.mt-1 {
-    margin-top: .25rem
-}
-
-.mt-2 {
-    margin-top: .5rem
-}
-
-.mt-2\.5 {
-    margin-top: .625rem
-}
-
-.mt-3 {
-    margin-top: .75rem
-}
-
-.mt-4 {
-    margin-top: 1rem
-}
-
-.flex {
-    display: flex
-}
-
-.table {
-    display: table
-}
-
-.hidden {
-    display: none
-}
-
-.h-1 {
-    height: .25rem
-}
-
-.h-10 {
-    height: 2.5rem
-}
-
-.h-20 {
-    height: 5rem
-}
-
-.h-4\/5 {
-    height: 80%
-}
-
-.h-\[100px\] {
-    height: 100px
-}
-
-.h-\[52px\] {
-    height: 52px
-}
-
-.h-full {
-    height: 50%
-}
-
-.h-px {
-    height: 1px
-}
-
-.h-screen {
-    height: 100vh
-}
-
-.w-10 {
-    width: 2.5rem
-}
-
-.w-20 {
-    width: 5rem
-}
-
-.w-3\/5 {
-    width: 60%
-}
-
-.w-4\/5 {
-    width: 80%
-}
-
-.w-\[100px\] {
-    width: 100px
-}
-
-.w-\[15\%\] {
-    width: 15%
-}
-
-.w-\[30\%\] {
-    width: 30%
-}
-
-.w-\[52px\] {
-    width: 52px
-}
-
-.w-\[calc\(100\%_-_50px\)\] {
-    width: calc(100% - 50px)
-}
-
-.w-fit {
-    width: -moz-fit-content;
-    width: fit-content
-}
-
-.w-full {
-    width: 100%
-}
-
-.min-w-\[150px\] {
-    min-width: 150px
-}
-
-.min-w-\[350px\] {
-    min-width: 350px
-}
-
-.max-w-\[1200px\] {
-    max-width: 1200px
-}
-
-.max-w-\[200px\] {
-    max-width: 200px
-}
-
-.max-w-\[350px\] {
-    max-width: 350px
-}
-
-.max-w-\[800px\] {
-    max-width: 800px
-}
-
-.shrink-0 {
-    flex-shrink: 0
-}
-
-.-translate-x-2\/4 {
-    --tw-translate-x: -50%
-}
-
-.-translate-x-2\/4,.-translate-y-2\/4 {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-.-translate-y-2\/4 {
-    --tw-translate-y: -50%
-}
-
-.-rotate-180 {
-    --tw-rotate: -180deg;
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-.animate-\[burger_0\.5s\] {
-    animation: burger .5s
-}
-
-.select-none {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none
-}
-
-.flex-col {
-    flex-direction: column
-}
-
-.items-end {
-    align-items: flex-end
-}
-
-.items-center {
-    align-items: center
-}
-
-.justify-center {
-    justify-content: center
-}
-
-.justify-between {
-    justify-content: space-between
-}
-
-.gap-1 {
-    gap: .25rem
-}
-
-.gap-1\.5 {
-    gap: .375rem
-}
-
-.gap-2 {
-    gap: .5rem
-}
-
-.gap-3 {
-    gap: .75rem
-}
-
-.gap-4 {
-    gap: 1rem
-}
-
-.gap-5 {
-    gap: 1.25rem
-}
-
-.gap-6 {
-    gap: 1.5rem
-}
-
-.gap-9 {
-    gap: 2.25rem
-}
-
-.gap-\[15px\] {
-    gap: 15px
-}
-
-.rounded {
-    border-radius: .25rem
-}
-
-.rounded-3xl {
-    border-radius: 1.5rem
-}
-
-.rounded-full {
-    border-radius: 9999px
-}
-
-.rounded-lg {
-    border-radius: .5rem
-}
-
-.rounded-md {
-    border-radius: .375rem
-}
-
-.border {
-    border-width: 1px
-}
-
-.border-2 {
-    border-width: 2px
-}
-
-.border-\[3px\] {
-    border-width: 3px
-}
-
-.border-t {
-    border-top-width: 1px
-}
-
-.border-solid {
-    border-style: solid
-}
-
-.border-dashed {
-    border-style: dashed
-}
-
-.border-error {
-    --tw-border-opacity: 1;
-    border-color: rgb(255 255 255/var(--tw-border-opacity))
-}
-
-.border-pink {
-    --tw-border-opacity: 1;
-    border-color: rgb(255 255 255/var(--tw-border-opacity))
-}
-
-.border-pink-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgb(255 255 255/var(--tw-border-opacity))
-}
-
-.border-primary {
-    --tw-border-opacity: 1;
-    border-color: rgb(18 18 18/var(--tw-border-opacity))
-}
-
-.border-success {
-    --tw-border-opacity: 1;
-    border-color: rgb(124 232 118/var(--tw-border-opacity))
-}
-
-.border-t-primary {
-    --tw-border-opacity: 1;
-    border-top-color: rgb(18 18 18/var(--tw-border-opacity))
-}
-
-.bg-black {
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0/var(--tw-bg-opacity))
-}
-
-.bg-error-light {
-    background-color: #ffffff31
-}
-
-.bg-pink {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
-}
-
-.bg-pink-light {
-    background-color: #ffffff31
-}
-
-.bg-primary {
-    --tw-bg-opacity: 1;
-    background-color: rgb(10 10 10/var(--tw-bg-opacity))
-}
-
-.bg-success-light {
-    background-color: #ffffff31
-}
-
-.bg-center {
-    background-position: 50%
-}
-
-.object-cover {
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.p-2 {
-    padding: .5rem
-}
-
-.p-2\.5 {
-    padding: .625rem
-}
-
-.p-3 {
-    padding: .75rem
-}
-
-.p-4 {
-    padding: 1rem
-}
-
-.p-5 {
-    padding: 1.25rem
-}
-
-.p-6 {
-    padding: 1.5rem
-}
-
-.px-0 {
-    padding-left: 0;
-    padding-right: 0
-}
-
-.px-3 {
-    padding-left: .75rem;
-    padding-right: .75rem
-}
-
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem
-}
-
-.px-\[30px\] {
-    padding-left: 30px;
-    padding-right: 30px
-}
-
-.px-\[45px\] {
-    padding-left: 45px;
-    padding-right: 45px
-}
-
-.py-0 {
-    padding-top: 0;
-    padding-bottom: 0
-}
-
-.py-1 {
-    padding-top: .25rem;
-    padding-bottom: .25rem
-}
-
-.py-2 {
-    padding-top: .5rem;
-    padding-bottom: .5rem
-}
-
-.py-3 {
-    padding-top: .75rem;
-    padding-bottom: .75rem
-}
-
-.py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem
-}
-
-.py-\[25px\] {
-    padding-top: 25px;
-    padding-bottom: 25px
-}
-
-.pb-6 {
-    padding-bottom: 1.5rem
-}
-
-.pb-\[150px\] {
-    padding-bottom: 150px
-}
-
-.pr-\[30px\] {
-    padding-right: 30px
-}
-
-.pt-12 {
-    padding-top: 3rem
-}
-
-.pt-\[50px\] {
-    padding-top: 50px
-}
-
-.text-center {
-    text-align: center
-}
-
-.text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem
-}
-
-.text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem
-}
-
-.text-\[52px\] {
-    font-size: 52px
-}
-
-.text-base {
-    font-size: 1rem;
-    line-height: 1.5rem
-}
-
-.text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem
-}
-
-.text-sm {
-    font-size: .875rem;
-    line-height: 1.25rem
-}
-
-.text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem
-}
-
-.text-xs {
-    font-size: .75rem;
-    line-height: 1rem
-}
-
-.font-bold {
-    font-weight: 700
-}
-
-.font-medium {
-    font-weight: 500
-}
-
-.font-normal {
-    font-weight: 400
-}
-
-.leading-3 {
-    line-height: .75rem
-}
-
-.tracking-\[0\.5px\] {
-    letter-spacing: .5px
-}
-
-.text-error {
-    --tw-text-opacity: 1;
-    color: rgb(242 80 48/var(--tw-text-opacity))
-}
-
-.text-primary {
-    --tw-text-opacity: 1;
-    color: rgb(236 83 190/var(--tw-text-opacity))
-}
-
-.text-secondary {
-    --tw-text-opacity: 1;
-    color: rgb(248 151 219/var(--tw-text-opacity))
-}
-
-.text-success {
-    --tw-text-opacity: 1;
-    color: rgb(124 232 118/var(--tw-text-opacity))
-}
-
-.text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
-}
-
-.no-underline {
-    text-decoration-line: none
-}
-
-.opacity-80 {
-    opacity: .8
-}
-
-.shadow {
-    --tw-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
-    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
-}
-
-.transition-\[0\.3s\] {
-    transition-property: .3s;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s
-}
-
-:root {
-    --accent-1-lighter: #ec53be31
-}
-
-body {
-    background: url(topo.svg);
-    background-color: #000;
-    color: #fff;
-    font-family: Chivo Mono,monospace;
-    line-height: normal;
-    animation: load 1s
-}
-
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
-    background-color: #ffffff31;
-    border-width: 2px;
-    border-style: dashed;
-    border-color: rgb(255 255 255/var(--tw-border-opacity));
-    gap: .75rem;
-    padding: .625rem 1.25rem;
-    transition: .3s
-}
-
-.banner,.button {
-    --tw-border-opacity: 1
-}
-
-.banner {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 40%;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-bottom: 2px rgb(248 151 219/var(--tw-border-opacity));
-    border-style: dashed;
-    filter: drop-shadow(0 4px 4px rgba(0,0,0,.25))
-}
-
-@media screen and (max-width: 1024px) {
-    .banner {
-        height:25%
-    }
-}
-
-.button:hover,.icon:hover {
-    border-style: solid;
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0/var(--tw-text-opacity))
-}
-
-.link {
-    font-size: .875rem;
-    line-height: 1.25rem;
-    opacity: .8
-}
-
-.table {
-    display: grid;
-    gap: 45px;
-    padding-top: 25px;
-    grid-template-columns: repeat(25px,1fr)
-}
-
-input {
-    width: 100%;
-    border-radius: .25rem;
-    border-width: 1px;
-    border-style: solid;
-    --tw-border-opacity: 1;
-    border-color: rgb(18 18 18/var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(10 10 10/var(--tw-bg-opacity));
-    padding: .5rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
-    transition: outline-width .3s;
-    outline: 0 solid var(--accent-1-lighter)
-}
-
-input:focus {
-    outline-width: 2px
-}
-
-.shadow {
-    box-shadow: 0 4px 8px 0 #5a5a5a14,0 6px 20px 0 #2f2f2f38
-}
-
-@keyframes load {
-    0% {
-        opacity: 0
-    }
-}
-
-@keyframes burger {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px)
-    }
-}
-
-::-moz-selection {
-    --tw-bg-opacity: 1;
-    background-color: rgb(236 83 190/var(--tw-bg-opacity))
-}
-
-::selection {
-    --tw-bg-opacity: 1;
-    background-color: rgb(236 83 190/var(--tw-bg-opacity))
-}
-    </style>
-</head>
-<body>
-	<div class="draggable">
-    <header>
-		<nav class="nav">
-			<a href="mailto:adrian@loser.gg" target="_blank">Contact</a>
-			<a href="/projects" target="_blank">Projects</a>
-		</nav>
-	</br>
-	</header>
-	<div class="container">
-		<img class="profile-pic" src="avatar.png" alt="Profile Picture">
-		<h1>adrian</h1>
-	</br>
-		<p id="bio"></p>
-	</br>
-</br>
-		<div class="icons">
-			<a href="https://instagram.com/rtmonly" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="https://tiktok.com/@rtmonly" target="_blank"><i class="fab fa-tiktok"></i></a>
-			<a href="https://github.com/rtmonly" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.last.fm/user/okigo" target="_blank"><i class="fa fa-lastfm-square"></i></a>
-		</div>
-		<div class="links">
-			<a href="https://discord.gg/loser" class="button">loser</a>
-      </div>
-		<div class="table">
-			<div class="bg-primary rounded tracking-[0.5px] text-base border border-primary h-full mt-4 p-5 border-solid shadow">
-				<div class="flex gap-5">
-					<img src="/avatar.png" width="52" height="52" class="w-[52px] h-[52px] border-pink border-2 border-dashed object-cover rounded-full"/>
-					<div class="flex flex-col gap-1">
-						<a href="https://discord.com/users/1171261965767807028" class="text-lg font-medium">@rtmonly</a>
-						<p class="text-base font-normal opacity-80">cuban male model turned esports elite</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-	<script src="https://kit.fontawesome.com/8d2a52b7b7.js" crossorigin="anonymous"></script>
-
-	<script type="text/javascript" src="js/magicmouse-2.0.0.cdn.min.js"></script>
-
-    <script type="text/javascript">
-        options = {
-        "cursorOuter": "circle-basic",
-        "hoverEffect": "circle-move",
-        "hoverItemMove": false,
-        "defaultCursor": false,
-        "outerWidth": 30,
-        "outerHeight": 30
-          };
-        magicMouse(options);
-    </script>
-
-
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>RTM - Project</title>
+        <meta property="og:title" content="RTM - Related Through Money">
+        <meta property="og:description" content="network, growth, projects">
+        <meta property="og:image" content="images/rtm.png">
+        <meta property="og:url" content="https://adrn.dev/projects/rtm">
+        <meta property="theme-color" content="#4f4979">
+        <link rel="icon" type="image/x-icon" href="images/exec.png">
+        <meta name="next-head-count" content="16">
+        <noscript data-n-css=""></noscript>
+        <link href="css/a0396095533c7170.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script defer="defer" src="magicmouse-2.0.0.cdn.min.js"></script>
+        <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+    </head>
+    <body class="flex justify-center bg-center h-screen">
+        <div id="__next">
+            <main class="max-w-[1200px] h-full w-full px-[45px] py-0">
+                <header class="flex items-center justify-between px-0 py-[25px] relative">
+                    <div>
+                        <h1 class="text-2xl font-bold select-none">
+                            adrn.dev<span class="text-primary text-sm">/projects</span>
+                        </h1>
+                    </div>
+                    <div class="hidden gap-5 sm:flex">
+                        <a class="link relative" href="https://www.roblox.com/groups/14653872/Creators-Co">Creators & Co.</a>
+                        <a class="link relative" href="https://www.roblox.com/games/15604452313/Freeway">Freeway</a>
+                    </div>
+                    <div class="hidden sm:flex">
+                        <a class="button undefined rounded-3xl" href="https://adrn.dev/projects">
+                            <span>projects</span>
+                        </a>
+                    </div>
+                    <div class="flex text-primary sm:hidden">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-xl transition-[0.3s]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path>
+                        </svg>
+                        <div class="absolute top-20 rounded bg-primary border border-primary border-solid w-full select-none text-base text-center z-[1000] p-4 right-0 hidden">
+                            <div class="flex flex-col gap-1 w-full text-white">
+                                <a class="link relative" href="https://www.roblox.com/groups/14653872/Creators-Co">Creators & Co.</a>
+                                <a class="link relative" href="https://www.roblox.com/games/15604452313/Freeway">Freeway</a>
+                            </div>
+                            <a class="button undefined rounded" href="https://adrn.dev/projects">
+                                <span>projects</span>
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square-arrow-up-right" class="svg-inline--fa fa-square-arrow-up-right fa-lg " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor" d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <section id="hero" class="h-4/5 flex shrink-0">
+                    <div class="h-full w-full flex items-center">
+                        <div class="flex flex-col gap-[15px] w-4/5">
+                            <h1 class="text-3xl md:text-[52px] md:leading-tight font-medium">
+                                <span class="underlined relative">RTM</span>
+                                 - Related Through Money
+                            </h1>
+                            <p class="text-base w-full md:text-lg font-medium md:w-3/5 opacity-80 ">projects, community, development, apparel, networking</p>
+                            <div class="flex items-center gap-3 w-3/5 mt-2.5">
+                                <a class="button undefined rounded-3xl" href="https://www.roblox.com/groups/17317612/RTM">
+                                    <span>Roblox</span>
+                                </a>
+                                <a class="button undefined rounded-3xl" href="https://discord.gg/rtm">
+                                    <span>Discord</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-full"></div>
+                </section>
+                <section id="features" class="pb-[150px]">
+                    <div class="flex items-center justify-center text-center text-3xl w-full">
+                        <h1 class="z-[2] w-fit px-[30px] py-0 absolute bg-black font-bold">About</h1>
+                        <div class="w-full -translate-y-2/4 h-px bg-pink left-0 justify-center"></div>
+                    </div>
+                    <div class="table">
+                        <div class="bg-primary rounded tracking-[0.5px] text-base border border-primary h-full mt-4 p-5 border-solid shadow relative">
+                            <div class="icon">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bolt" class="svg-inline--fa fa-bolt fa-xl " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-xl font-medium">Subsidiaries</span>
+                                <p class="text-sm font-normal opacity-80">Mostly known for creating Creators & Co, which specializes in bringing accessories to influencers' supporters.</p>
+                            </div>
+                        </div>
+                        <div class="bg-primary rounded tracking-[0.5px] text-base border border-primary h-full mt-4 p-5 border-solid shadow relative">
+                            <div class="icon">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shield" class="svg-inline--fa fa-shield fa-xl " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor" d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-xl font-medium">Community</span>
+                                <p class="text-sm font-normal opacity-80">We have created an active connunity on our Discord server. With over 2k+ members there's always somebody to speak to.</p>
+                            </div>
+                        </div>
+                        <div class="bg-primary rounded tracking-[0.5px] text-base border border-primary h-full mt-4 p-5 border-solid shadow relative">
+                            <div class="icon">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-secret" class="svg-inline--fa fa-user-secret fa-xl " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor" d="M224 16c-6.7 0-10.8-2.8-15.5-6.1C201.9 5.4 194 0 176 0c-30.5 0-52 43.7-66 89.4C62.7 98.1 32 112.2 32 128c0 14.3 25 27.1 64.6 35.9c-.4 4-.6 8-.6 12.1c0 17 3.3 33.2 9.3 48H45.4C38 224 32 230 32 237.4c0 1.7 .3 3.4 1 5l38.8 96.9C28.2 371.8 0 423.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-58.5-28.2-110.4-71.7-143L415 242.4c.6-1.6 1-3.3 1-5c0-7.4-6-13.4-13.4-13.4H342.7c6-14.8 9.3-31 9.3-48c0-4.1-.2-8.1-.6-12.1C391 155.1 416 142.3 416 128c0-15.8-30.7-29.9-78-38.6C324 43.7 302.5 0 272 0c-18 0-25.9 5.4-32.5 9.9c-4.8 3.3-8.8 6.1-15.5 6.1zm56 208H267.6c-16.5 0-31.1-10.6-36.3-26.2c-2.3-7-12.2-7-14.5 0c-5.2 15.6-19.9 26.2-36.3 26.2H168c-22.1 0-40-17.9-40-40V169.6c28.2 4.1 61 6.4 96 6.4s67.8-2.3 96-6.4V184c0 22.1-17.9 40-40 40zm-88 96l16 32L176 480 128 288l64 32zm128-32L272 480 240 352l16-32 64-32z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-xl font-medium">Development</span>
+                                <p class="text-sm font-normal opacity-80">We develop & maintain games on the user generated platform Roblox. Freeway is our current project and is being actively developed daily.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="testimonials" class="pb-[150px]">
+                    <div class="flex items-center justify-center text-center text-3xl w-full">
+                        <h1 class="z-[2] w-fit pr-[30px] bg-black font-bold">Founders</h1>
+                        <div class="w-full -translate-y-2/4 h-px bg-pink left-0 justify-center"></div>
+                    </div>
+                    <div class="table">
+                        <div class="bg-primary rounded tracking-[0.5px] text-base border border-primary h-full mt-4 p-5 border-solid shadow">
+                            <div class="flex gap-5">
+                                <img src="images/adrian.png" width="52" height="52" class="w-[52px] h-[52px] border-pink border-2 border-dashed object-cover rounded-full">
+                                <div class="flex flex-col gap-1">
+                                    <a href="https://discord.com/users/1171261965767807028" class="text-lg font-medium">@adrian</a>
+                                    <p class="text-base font-normal opacity-80">Founder & Co-Owner of RTM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-primary rounded tracking-[0.5px] text-base border border-primary h-full mt-4 p-5 border-solid shadow">
+                            <div class="flex gap-5">
+                                <img src="images/baiku.png" width="52" height="52" class="w-[52px] h-[52px] border-pink border-2 border-dashed object-cover rounded-full">
+                                <div class="flex flex-col gap-1">
+                                    <a href="https://discord.com/users/236707666888622080" class="text-lg font-medium">@baiku</a>
+                                    <p class="text-base font-normal opacity-80">Founder & Co-Owner of RTM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="flex items-center justify-between w-full border-t border-t-primary border-solid px-0 py-6">
+                    <div>
+                        <h1 class="text-2xl font-bold select-none">
+                            adrn.dev<span class="text-primary text-sm">/projects</span>
+                        </h1>
+                    </div>
+                        </a>
+                    </div>
+                </footer>
+            </main>
+        </div>
+        </script>
+        <script type="text/javascript" src="js/magicmouse-2.0.0.cdn.min.js"></script>
+
+        <script type="text/javascript">
+            options = {
+            "cursorOuter": "circle-basic",
+            "hoverEffect": "circle-move",
+            "hoverItemMove": false,
+            "defaultCursor": false,
+            "outerWidth": 30,
+            "outerHeight": 30
+              };
+            magicMouse(options);
+        </script>
+    </body>
 </html>
-<script src="bio.js"></script>
