@@ -1,7 +1,7 @@
 // © 2023 H8.LOL | All rights reserved.
 
 window.addEventListener('load', () => {
-    const bios = ["adrian's projects" , "be on the lookout for new releases" ,  "please enjoy your stay"];
+    const bios = ["xd" , "rawr" , "ruff" ,  "meow"];
     const bioContainer = document.querySelector('#bio');
     let currentBioIndex = 0;
   
