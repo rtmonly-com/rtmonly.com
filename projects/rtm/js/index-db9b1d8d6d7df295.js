@@ -60,17 +60,17 @@
                         className: "hidden gap-5 sm:flex",
                         children: [(0,
                         r.jsx)(a(), {
-                            href: "/#main",
+                            href: "/projects/rtm/#main",
                             className: "link relative",
                             children: "Main"
                         }), (0,
                         r.jsx)(a(), {
-                            href: "/#about",
+                            href: "/projects/rtm/#about",
                             className: "link relative",
                             children: "About"
                         }), (0,
                         r.jsx)(a(), {
-                            href: "/#founders",
+                            href: "/projects/rtm/#founders",
                             className: "link relative",
                             children: "Founders"
                         })]
@@ -100,17 +100,17 @@
                                 className: "flex flex-col gap-1 w-full text-white",
                                 children: [(0,
                                 r.jsx)(a(), {
-                                    href: "/#main",
+                                    href: "/projects/rtm/#main",
                                     className: "w-full p-3 relative",
                                     children: "Main"
                                 }), (0,
                                 r.jsx)(a(), {
-                                    href: "/#about",
+                                    href: "/projects/rtm/#about",
                                     className: "w-full p-3 relative",
                                     children: "About"
                                 }), (0,
                                 r.jsx)(a(), {
-                                    href: "/#founders",
+                                    href: "/projects/rtm/#founders",
                                     className: "w-full p-3 relative",
                                     children: "Founders"
                                 })]
