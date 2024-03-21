@@ -146,7 +146,7 @@
                     }), (0,
                     r.jsx)("p", {
                         className: "text-base w-full md:text-lg font-medium md:w-3/5 opacity-80 ",
-                        children: "projects, community, development, apparel, networking, community"
+                        children: "projects, community, development, apparel, networking"
                     }), (0,
                     r.jsxs)("div", {
                         className: "flex items-center gap-3 w-3/5 mt-2.5",
