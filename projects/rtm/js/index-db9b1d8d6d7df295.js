@@ -60,17 +60,17 @@
                         className: "hidden gap-5 sm:flex",
                         children: [(0,
                         r.jsx)(a(), {
-                            href: "/projects/rtm/#main",
+                            href: "/#main",
                             className: "link relative",
                             children: "Main"
                         }), (0,
                         r.jsx)(a(), {
-                            href: "/projects/rtm/#about",
+                            href: "/#about",
                             className: "link relative",
                             children: "About"
                         }), (0,
                         r.jsx)(a(), {
-                            href: "/projects/rtm/#founders",
+                            href: "/#founders",
                             className: "link relative",
                             children: "Founders"
                         })]
@@ -100,17 +100,17 @@
                                 className: "flex flex-col gap-1 w-full text-white",
                                 children: [(0,
                                 r.jsx)(a(), {
-                                    href: "/projects/rtm/#main",
+                                    href: "/#main",
                                     className: "w-full p-3 relative",
                                     children: "Main"
                                 }), (0,
                                 r.jsx)(a(), {
-                                    href: "/projects/rtm/#about",
+                                    href: "/#about",
                                     className: "w-full p-3 relative",
                                     children: "About"
                                 }), (0,
                                 r.jsx)(a(), {
-                                    href: "/projects/rtm/#founders",
+                                    href: "/#founders",
                                     className: "w-full p-3 relative",
                                     children: "Founders"
                                 })]
@@ -400,64 +400,7 @@
         s.default = ()=>(0,
         r.jsxs)(r.Fragment, {
             children: [(0,
-            r.jsxs)(a(), {
-                children: [(0,
-                r.jsx)("title", {
-                    children: "RTM - Related Through Money"
-                }), (0,
-                r.jsx)("meta", {
-                    name: "title",
-                    content: "RTM - Related Through Money"
-                }), (0,
-                r.jsx)("meta", {
-                    name: "description",
-                    content: "projects, community, development, apparel, networking, community."
-                }), (0,
-                r.jsx)("meta", {
-                    name: "theme-color",
-                    content: "#4f4979"
-                }), (0,
-                r.jsx)("meta", {
-                    property: "og:type",
-                    content: "website"
-                }), (0,
-                r.jsx)("meta", {
-                    property: "og:url",
-                    content: "https://adrn.dev/projects/"
-                }), (0,
-                r.jsx)("meta", {
-                    property: "og:title",
-                    content: "adrn.dev/projects"
-                }), (0,
-                r.jsx)("meta", {
-                    property: "og:description",
-                    content: "projects, community, development, apparel, networking, community."
-                }), (0,
-                r.jsx)("meta", {
-                    property: "og:image",
-                    content: "/images/exec.png"
-                }), (0,
-                r.jsx)("meta", {
-                    property: "twitter:card",
-                    content: "summary_large_image"
-                }), (0,
-                r.jsx)("meta", {
-                    property: "twitter:url",
-                    content: "https://adrn.dev/projects/"
-                }), (0,
-                r.jsx)("meta", {
-                    property: "twitter:title",
-                    content: "adrn.dev/projects"
-                }), (0,
-                r.jsx)("meta", {
-                    property: "twitter:description",
-                    content: "projects, community, development, apparel, networking, community."
-                }), (0,
-                r.jsx)("meta", {
-                    property: "twitter:image",
-                    content: "/images/exec.png"
-                })]
-            }), (0,
+            r.jsxs), (0,
             r.jsxs)("main", {
                 className: "max-w-[1200px] h-full w-full px-[45px] py-0",
                 children: [(0,
