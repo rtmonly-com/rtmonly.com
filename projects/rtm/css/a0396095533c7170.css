@@ -95,12 +95,6 @@ button,select {
     text-transform: none
 }
 
-[type=button],[type=reset],[type=submit],button {
-    -webkit-appearance: button;
-    background-color: transparent;
-    background-image: none
-}
-
 :-moz-focusring {
     outline: auto
 }
@@ -115,11 +109,6 @@ progress {
 
 ::-webkit-inner-spin-button,::-webkit-outer-spin-button {
     height: auto
-}
-
-[type=search] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px
 }
 
 ::-webkit-search-decoration {
@@ -177,11 +166,6 @@ input::placeholder,textarea::placeholder {
 
 :disabled {
     cursor: default
-}
-
-audio,canvas,embed,iframe,img,object,svg,video {
-    display: block;
-    vertical-align: middle
 }
 
 img,video {
@@ -891,7 +875,7 @@ img,video {
 }
 
 body {
-    background: url(../images/topography.svg);
+    background: url(/images/topography.svg);
     background-color: #000;
     color: #fff;
     font-family: Chivo Mono,monospace;
@@ -990,7 +974,7 @@ body {
     bottom: -.5rem;
     height: .625rem;
     width: 100%;
-    background-image: url(../images/underline.svg);
+    background-image: url(/images/underline.svg);
     background-size: cover;
     --tw-content: "";
     content: var(--tw-content)
@@ -1006,7 +990,7 @@ body {
     bottom: -.5rem;
     height: 5px;
     width: 100%;
-    background-image: url(../images/underline.svg);
+    background-image: url(/images/underline.svg);
     background-size: cover;
     opacity: 0;
     transition-property: .3s;
