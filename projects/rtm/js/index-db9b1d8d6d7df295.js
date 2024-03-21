@@ -60,9 +60,19 @@
                         className: "hidden gap-5 sm:flex",
                         children: [(0,
                         r.jsx)(a(), {
-                            href: "/projects/rtm/gallery",
+                            href: "/#main",
                             className: "link relative",
-                            children: "Gallery"
+                            children: "Main"
+                        }), (0,
+                        r.jsx)(a(), {
+                            href: "/#about",
+                            className: "link relative",
+                            children: "About"
+                        }), (0,
+                        r.jsx)(a(), {
+                            href: "/#founders",
+                            className: "link relative",
+                            children: "Founders"
                         })]
                     }), (0,
                     r.jsx)("div", {
@@ -90,9 +100,19 @@
                                 className: "flex flex-col gap-1 w-full text-white",
                                 children: [(0,
                                 r.jsx)(a(), {
-                                    href: "/projects/rtm/gallery",
+                                    href: "/#main",
                                     className: "w-full p-3 relative",
-                                    children: "Gallery"
+                                    children: "Main"
+                                }), (0,
+                                r.jsx)(a(), {
+                                    href: "/#about",
+                                    className: "w-full p-3 relative",
+                                    children: "About"
+                                }), (0,
+                                r.jsx)(a(), {
+                                    href: "/#founders",
+                                    className: "w-full p-3 relative",
+                                    children: "Founders"
                                 })]
                             }), (0,
                             r.jsx)(N, {
@@ -126,7 +146,7 @@
                     }), (0,
                     r.jsx)("p", {
                         className: "text-base w-full md:text-lg font-medium md:w-3/5 opacity-80 ",
-                        children: "projects, community, development, apparel, networking"
+                        children: "projects, community, development, apparel, networking, community"
                     }), (0,
                     r.jsxs)("div", {
                         className: "flex items-center gap-3 w-3/5 mt-2.5",
@@ -380,7 +400,12 @@
         s.default = ()=>(0,
         r.jsxs)(r.Fragment, {
             children: [(0,
-            r.jsxs), (0,
+            r.jsxs)(a(), {
+                children: [(0,
+                r.jsx)("title", {
+                    children: "RTM - Project"
+                })]
+            }), (0,
             r.jsxs)("main", {
                 className: "max-w-[1200px] h-full w-full px-[45px] py-0",
                 children: [(0,
