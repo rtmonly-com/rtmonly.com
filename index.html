@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<script defer="defer" src="magicmouse-2.0.0.cdn.min.js"></script>
+    <script defer="defer" src="magicmouse.js"></script>
+    <script defer="defer" src="options.js"></script>
 	<script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
 
 	<style>
@@ -130,6 +132,45 @@
         background-color: rgba(255, 255, 255, 0.5);
         color: #fff;
         }
+        .btn {
+    border-radius: 22px;
+    padding: 10px 25px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .btn:focus {
+    box-shadow: none;
+  }
+  .btn.btn-mm-dark {
+    background: #4F4F4F;
+    color: #fff;
+  }
+  .btn.btn-mm-light {
+    background: #EB5757;
+    color: #fff;
+  }
+  .btn.github-icon {
+    padding-left: 44px;
+  }
+  .btn.github-icon::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 30px;
+    background: url('../assets/images/github-icon.svg');
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .magic-hover {
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: none;
+    }
+}
         .button {
         display: block;
         margin-top: 1rem;
@@ -1075,8 +1116,8 @@ input:focus {
 	<div class="draggable">
     <header>
 		<nav class="nav">
-			<a href="mailto:adrian@loser.gg" target="_blank">Contact</a>
-			<a href="/projects" target="_blank">Projects</a>
+            <a href="https://poor.gg" class="nav-link magic-hover magic-hover__square">poor</a>
+            <a href="https://loser.gg" class="nav-link magic-hover magic-hover__square">loser</a>
 		</nav>
 	</br>
 	</header>
@@ -1088,21 +1129,21 @@ input:focus {
 	</br>
 </br>
 		<div class="icons">
-			<a href="https://instagram.com/rtmonly" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="https://tiktok.com/@rtmonly" target="_blank"><i class="fab fa-tiktok"></i></a>
-			<a href="https://github.com/rtmonly" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.last.fm/user/okigo" target="_blank"><i class="fa fa-lastfm-square"></i></a>
-                        <a href="https://www.youtube.com/@rtmonly" target="_blank"><i class="fab fa-youtube"></i></a>
+			<a href="https://instagram.com/rtmonly" class="nav-link magic-hover magic-hover__square" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://tiktok.com/@rtmonly" class="nav-link magic-hover magic-hover__square" target="_blank"><i class="fab fa-tiktok"></i></a>
+			<a href="https://github.com/rtmonly" class="nav-link magic-hover magic-hover__square" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.last.fm/user/okigo" class="nav-link magic-hover magic-hover__square" target="_blank"><i class="fa fa-lastfm-square"></i></a>
+                        <a href="https://www.youtube.com/@rtmonly" class="nav-link magic-hover magic-hover__square" target="_blank"><i class="fab fa-youtube"></i></a>
 		</div>
 		<div class="links">
-			<a href="https://discord.gg/loser" class="button">loser</a>
+			<a href="https://discord.gg/loser" class="button magic-hover magic-hover__square">loser</a>
       </div>
 		<div class="table">
 			<div class="bg-primary rounded tracking-[0.5px] text-base border border-primary h-full mt-4 p-5 border-solid shadow">
 				<div class="flex gap-5">
 					<img src="/avatar.png" width="52" height="52" class="w-[52px] h-[52px] border-pink border-2 border-dashed object-cover rounded-full"/>
 					<div class="flex flex-col gap-1">
-						<a href="https://discord.com/users/1171261965767807028" class="text-lg font-medium">@rtmonly</a>
+						<a href="https://discord.com/users/1171261965767807028" class="nav-link magic-hover magic-hover__square" class="text-lg font-medium">@rtmonly</a>
 						<p class="text-base font-normal opacity-80">cuban male model turned esports elite</p>
 					</div>
 				</div>
@@ -1115,15 +1156,15 @@ input:focus {
 	<script type="text/javascript" src="js/magicmouse-2.0.0.cdn.min.js"></script>
 
     <script type="text/javascript">
-        options = {
-        "cursorOuter": "circle-basic",
-        "hoverEffect": "circle-move",
-        "hoverItemMove": false,
-        "defaultCursor": false,
-        "outerWidth": 30,
-        "outerHeight": 30
-          };
-        magicMouse(options);
+       options = {
+    "outerStyle": "disable",
+    "hoverEffect": "pointer-blur",
+    "hoverItemMove": false,
+    "defaultCursor": false,
+    "outerWidth": 30,
+    "outerHeight": 30
+        }
+magicMouse(options);
     </script>
 
 
