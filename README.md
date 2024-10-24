@@ -2,7 +2,7 @@
 
 ---
 
-Source code for my personal website, [adrn.dev](https://adrn.dev).
+Source code for my personal website, [rtmonly.com](https://rtmonly.com).
 
 Built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [TypeScript](https://www.typescriptlang.org/) & [Million](https://www.million.dev).
 
